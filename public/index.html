@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/tailwind.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <title>Tailwind Travel</title>
+</head>
+<body>
+    <nav></nav>
+    <div id="tab-bar"></div>
+    <section class="w-full h-screen">
+
+        <!-- Search Hero -->
+        <div id="hero" class="w-full h-screen items-center bg-fixed bg-center bg-cover text-center relative flex"  style="background-image: url(./img/fondo-playa.jpg)">
+            <h1 class="t-uppercase text-white text-center font-black uppercase text-big absolute m-auto w-full top-[20%]">Discover</h1>
+            
+            <div class="bg-water bg-cover bg-top w-full absolute bottom-0 h-2/3">
+            </div>
+            
+            <div class="w-full h-auto absolute inset-x-0 bottom-1/4 flex flex-col">
+                <input class="rounded-3xl p-3 outline-none shadow-md w-80 max-w-full m-auto mb-5" placeholder="Cancun" type="search" name="" id="">
+                <button class="text-lg bg-white text-secundary p-2 rounded-3xl w-32 m-auto">Explore</button>
+            </div>
+        </div>
+        <!-- / Search Hero -->
+
+        <!-- Cards -->
+        <div id="recommended" class="p-4 md:max-w-screen-xlg m-auto">
+            <h2 class="Title">Most visited</h2>
+
+            <div class="w-auto h-80 items-center mt-2 overflow-x-auto overscroll-x-contain flex space-x-4 m-auto scrollbar-hide">
+            
+            <!-- Card 1 -->
+                <div class="Card bg-viajesBorabora"> 
+                    <div class="InsideCard">
+                        <h3 class="text-secundary text-md font-bold">Bora Bora</h3>
+                        <p class="text-terciary text-sm">French Polynesiai</p>
+                    </div>
+                </div>
+            <!-- / Card 1 -->
+            <!-- Card 2 -->
+                <div class="Card bg-viajesSouthIsland"> 
+                    <div class="InsideCard">
+                        <h3 class="text-secundary text-md font-bold">South Island</h3>
+                        <p class="text-terciary text-sm">New Zealand</p>
+                    </div>
+                </div>
+            <!-- / Card 2 -->
+            <!-- Card 3 -->
+                <div class="Card bg-viajesParis"> 
+                    <div class="InsideCard">
+                        <h3 class="text-secundary text-md font-bold">Paris</h3>
+                        <p class="text-terciary text-sm">France</p>
+                    </div>
+                </div>
+            <!-- / Card 3 -->
+            <!-- Card 5 -->
+                <div class="Card bg-viajesMaui"> 
+                    <div class="InsideCard">
+                        <h3 class="text-secundary text-md font-bold">Maui</h3>
+                        <p class="text-terciary text-sm">Hawaii</p>
+                    </div>
+                </div>
+            <!-- / Card 5 -->
+            <!-- Card 6 -->
+                <div class="Card bg-viajesLondon"> 
+                    <div class="InsideCard">
+                        <h3 class="text-secundary text-md font-bold">London</h3>
+                        <p class="text-terciary text-sm">England</p>
+                    </div>
+                </div>
+            <!-- / Card 6 -->
+            <!-- Card 7 -->
+                <div class="Card bg-viajesRome"> 
+                    <div class="InsideCard">
+                        <h3 class="text-secundary text-md font-bold">Rome</h3>
+                        <p class="text-terciary text-sm">Italy</p>
+                    </div>
+                </div>
+            <!-- / Card 7-->
+
+            </div>
+
+        </div>
+        <!-- / Cards -->
+
+        <div id="experiences">
+
+        </div>
+    </section>    
+    <footer>
+
+    </footer>
+</body>
+</html>
