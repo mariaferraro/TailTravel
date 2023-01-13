@@ -50,7 +50,10 @@ module.exports = {
       },
       textShadow: {
         'white': '1px 1px 8px #fff',
-      }
+      },
+      screens: {
+        '3xl': '1600px',
+      },
     },
     fontFamily:{
       Lato:['Lato', 'sans-serif']
