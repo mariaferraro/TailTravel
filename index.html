@@ -53,17 +53,15 @@
     </nav>
     <!-- / Header -->
 
-
-    <main class="w-full h-auto relative z-0">
         
         <!-- Search Hero -->
-        <section id="hero" class="w-full h-screen items-center bg-beach dark:bg-beachDark bg-fixed bg-center bg-cover text-center relative flex">
-            <h1 class="t-uppercase text-white dark:text-gray-300 text-center font-black uppercase text-big absolute m-auto w-full md:mt-6 top-[30%] md:top-[20%]">Discover</h1>
+        <section id="hero" class="w-full h-screen items-center bg-beach dark:bg-beachDark bg-center bg-cover text-center relative flex z-10">
             
-            <div class="bg-water dark:bg-waterDark bg-cover bg-top w-full absolute bottom-0 h-2/3">
-            </div>
-            
-            <div class="w-full h-auto absolute inset-x-0 bottom-1/4 flex flex-col">
+            <h1 id="discover" class="z-10 t-uppercase text-white dark:text-gray-300 text-center font-black uppercase text-big absolute m-auto w-full md:mt-6 top-0 translate-y-[360px] md:translate-y-[120%]">Discover</h1>
+            <div id="layer1" class="z-20 bg-water dark:bg-waterDark bg-cover bg-top w-full absolute bottom-0 h-[60%]"></div>
+            <div class="w-full h-1/6 z-30 bg-gradient-to-t from-white dark:from-gray-900 bottom-0 absolute"></div>
+                    
+            <div class="z-40 w-full h-auto absolute inset-x-0 bottom-1/4 flex flex-col">
                 <input class="rounded-3xl p-3 outline-none shadow-md w-80 max-w-full m-auto mb-5 transition duration-300 focus-within:shadow-sm focus:scale-110 dark:bg-gray-900 dark:text-gray-100" placeholder="Cancun" type="search" name="" id="">
                 <button class="text-lg bg-white text-secundary p-2 rounded-3xl w-32 m-auto dark:bg-gray-800 dark:text-gray-100 transition duration-500 ease-in-out hover:bg-secundary hover:text-white hover:scale-110 dark:hover:bg-secundary">
                     Explore
@@ -72,6 +70,8 @@
         </section>
         <!-- / Search Hero -->
         
+
+    <main class="w-full h-auto relative z-50 bg-white dark:bg-gray-900">
         <!-- Categories -->
         <section id="categories" class="p-6 mb-2 md:max-w-screen-xl m-auto">
             <h2 class="Title">Categories</h2>
@@ -332,6 +332,27 @@
 
 
     <script>
+
+        // Parallax effect hero
+        var layer1 = document.getElementById('layer1')
+        scroll = window.pageYOffset;
+        document.addEventListener('scroll',
+        function (e) {
+            var offset = window.pageYOffset;
+            scroll = offset;
+            layer1.style.height = (60 + scroll/40) + '%';
+        });
+
+        var discover = document.getElementById('discover')
+        scroll = window.pageYOffset;
+        document.addEventListener('scroll',
+        function (e) {
+            var offset = window.pageYOffset;
+            scroll = offset;
+            discover.style.top = (scroll/20) + '%';
+        });
+
+
         // Toggle for Mobile menu
         const menuButton = document.querySelector('#menu-button');
         const menu = document.querySelector('#menu');
