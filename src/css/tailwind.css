@@ -5,11 +5,14 @@
 .Title{
     @apply text-secundary text-3xl mb-4 mt-8 font-semibold
 }
+.BtnPrimary{
+    @apply text-lg bg-primary text-white rounded-3xl w-32 dark:bg-gray-800 dark:text-white transition duration-500 ease-in-out hover:bg-secundary hover:text-white hover:scale-110 dark:hover:bg-secundary
+}
 .CategoryCard{
-    @apply text-center pt-4 pb-1 px-6 m-2 rounded-xl border-2 border-gray-200 hover:scale-110 dark:border-gray-700
+    @apply text-center pt-4 pb-1 px-6 m-2 rounded-xl border-2 border-gray-200 transition duration-500 ease-in-out hover:scale-110 dark:border-gray-700
 }
 .Card{
-    @apply w-48 h-64 p-3 rounded-3xl bg-cover bg-center relative flex-none transition hover:-translate-y-4 shadow-lg
+    @apply w-48 h-64 p-3 rounded-3xl bg-cover bg-center relative flex-none transition duration-500 ease-in-out hover:-translate-y-4 shadow-lg
 }
 .InsideCard{
     @apply w-10/12 m-auto bg-white h-auto pt-1 pb-1 pl-3 pr-3 rounded-2xl absolute -bottom-10 dark:bg-gray-700 shadow-lg

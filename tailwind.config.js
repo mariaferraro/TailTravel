@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
-  content: ["./public/index.html", "./src/**/*.{html,js}"],
+  content: ["./public/index.html", "./public/travel.html"],
   darkMode: 'class',
   theme: {
     extend: {
@@ -11,13 +11,19 @@ module.exports = {
       backgroundImage : {
         'beach':'url("../img/fondo-playa.jpg")',
         'water':'url("../img/agua-playa.png")',
+        'beachDark':'url("../img/fondo-playa-darkmode.jpg")',
+        'waterDark':'url("../img/agua-playa-darkmode.png")',
         'viajesSouthIsland':'url("../img/viajes-southisland.jpg")',
         'viajesBorabora':'url("../img/viajes-borabora.jpg")',
+        'viajesBoraboraPC':'url("../img/viajesBorabora-pc.jpg")',
         'viajesParis':'url("../img/viajes-paris.jpg")',
         'viajesMaui':'url("../img/viajes-maui.jpg")',
         'viajesLondon':'url("../img/viajes-london.jpg")',
         'viajesRome':'url("../img/viajes-rome.jpg")',
         'expBorabora':'url("../img/experiencia-borabora.jpg")',
+        'expBoraboraYoga':'url("../img/experiencia-borabora-yoga.jpg")',
+        'expBoraboraDiving':'url("../img/experiencia-borabora-diving.jpg")',
+        'expBoraboraFlyboarding':'url("../img/experiencia-borabora-flyboarding.jpg")',
         'expBoraboraLg':'url("../img/experiencia-borabora-lg.jpg")',
         'expYellowknife':'url("../img/experiencia-yellowknife.jpg")',
         'expCalafate':'url("../img/experiencia-calafate.jpg")',
@@ -38,9 +44,12 @@ module.exports = {
         'terciary': '#959595'
       },
       fontSize:{
-        'big': ['20vw', {
+        'big': ['16vw', {
           lineHeight: '1'
         }],
+      },
+      textShadow: {
+        'white': '1px 1px 8px #fff',
       }
     },
     fontFamily:{
@@ -48,6 +57,7 @@ module.exports = {
     }
   },
   plugins: [
-    require('tailwind-scrollbar-hide')
+    require('tailwind-scrollbar-hide'),
+    require('tailwindcss-textshadow')
   ],
 }
