@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
-  content: ["./docs/index.html", "./docs/travel.html"],
+  content: ["./public/index.html", "./public/travel.html"],
   darkMode: 'class',
   theme: {
     extend: {
@@ -53,6 +53,7 @@ module.exports = {
       },
       screens: {
         '3xl': '1600px',
+        'mm': '900px'
       },
     },
     fontFamily:{
